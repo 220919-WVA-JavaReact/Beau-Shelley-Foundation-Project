@@ -30,6 +30,12 @@ public class Tickets {
         this.employeeId = employeeId;
     }
 
+    public Tickets(String reason, double amount, int employeeId) {
+        this.reason = reason;
+        this.amount = amount;
+        this.employeeId = employeeId;
+    }
+
     public Tickets() {
     }
 

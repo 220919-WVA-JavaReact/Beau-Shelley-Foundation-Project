@@ -18,10 +18,11 @@ public class TicketService {
         String reason = sc.nextLine();
         System.out.println("Please enter amount you wished to be reimbursed for");
         Double amount = sc.nextDouble();
+
         
 
 
-        Tickets tickets = new Tickets(reason, amount, employee_id);
+        Tickets tickets = new Tickets(reason, amount, employees.getEmployee_id());
 
         boolean successful = td.createTicket(tickets);
 

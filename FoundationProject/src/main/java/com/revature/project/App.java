@@ -26,10 +26,10 @@ public class App {
 
                 switch (choice){
                     case "1":
-                        es.login();
+                        loggedInUser = es.login();
                         break;
                     case "2":
-                        es.register();
+                        loggedInUser = es.register();
                         break;
                     case "q":
                         running = false;
